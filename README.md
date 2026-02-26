@@ -36,6 +36,8 @@ AaveOracle.setAssetSources(
 - `getAssetPrice(USDC)` -> `6,855,405,329,514` (8 decimals) = **~$68,554**
 - Feed: Chainlink BTC/USD (`0xF403...E88c`)
 
+<img width="1090" height="241" alt="image" src="https://github.com/user-attachments/assets/a4a831b5-be1a-4a8b-b1d1-dcd49ceb5df4" />
+
 The Aave system now considers **1 USDC = 1 BTC in value**.
 
 // Exploitation
@@ -63,6 +65,8 @@ Distribute profit:
   - 5.61 ETH  -> 0x4838...5f97 (deployer/fee)
   - 181.75 ETH -> 0x3885...cEe  (main profit)
 ```
+
+<img width="1098" height="170" alt="image" src="https://github.com/user-attachments/assets/e16f9690-d306-4117-bb31-b8dc13896e86" />
 
 ---
 
