@@ -19,7 +19,7 @@ An `AssetListingAdmin` on Aave v3 (Ethereum) misconfigured the **USDC** price or
 
 // Oracle Misconfiguration
 
-Address `0xfb33...02Cc`, holding the `AssetListingAdmin` role in Aave's ACL Manager, executed the following call:
+Address `0xfb33...02Cc`, holding the `AssetListingAdmin` role in Aave's ACL Manager, executed the following call
 
 ```solidity
 AaveOracle.setAssetSources(
@@ -120,25 +120,25 @@ The 187.37 WETH borrow on Aave will never be repaid, the real collateral (8.88 U
 ## Fund Flow
 
 ```
-Initial state:
+Initial state
   Attacker: 0 USDC, 0 WETH, 0 ETH
 
-1. Uniswap V2 flash swap:
+1. Uniswap V2 flash swap
    Uniswap -> Attacker:  +8,879,192 USDC  (8.88 USDC)
 
-2. Aave deposit:
+2. Aave deposit
    Attacker -> Aave Pool: -8,879,192 USDC
    Aave -> Attacker:      +aUSDC (deposit receipt token)
 
-3. Aave borrow:
+3. Aave borrow
    Aave Pool -> Attacker: +187,366,746,326,704,993,556 wei WETH (187.37 WETH)
    Aave:                   variable debt token minted to attacker
 
-4. Flash swap repayment:
+4. Flash swap repayment
    Attacker -> Uniswap:   -4,289,216,474,598,283 wei WETH (0.004 WETH)
 
 5. Unwrap and distribute:
-   Attacker:              187.37 - 0.004 = 187.362 WETH -> ETH
+   Attacker              187.37 - 0.004 = 187.362 WETH -> ETH
    -> 0x4838...5f97:       5.613 ETH
    -> 0x3885...cEe:       181.749 ETH
 
@@ -151,6 +151,8 @@ Final state:
 ---
 
 ## Output
+
+<img width="552" height="299" alt="image" src="https://github.com/user-attachments/assets/9a7f30d7-308a-4d24-a402-d42dba73c90f" />
 
 ```
 USDC price BEFORE misconfiguration (8 decimals): 99993076         (~$1.00)
