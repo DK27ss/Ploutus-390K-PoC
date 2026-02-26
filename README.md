@@ -11,7 +11,7 @@
 
 ## Summary
 
-An `AssetListingAdmin` on Aave v3 (Ethereum) misconfigured the **USDC** price oracle to point to the Chainlink **BTC/USD** feed instead of **USDC/USD**, this inflated the USDC value by a factor of **~68,558x** within the Aave system, an attacker immediately exploited this by depositing **~8.88 USDC** as collateral (valued at ~$610K by the corrupted oracle) and borrowing **~187.37 WETH** (~$390K) that was never repaid.
+An `AssetListingAdmin` on Aave v3 (Ethereum) misconfigured the **USDC** price oracle to point to the Chainlink **BTC/USD** feed instead of **USDC/USD**, this inflated the USDC value by a factor of **~68,558x** within the Aave system, an attacker immediately exploited this by depositing **~8.88 USDC** as collateral (valued at $610K by the corrupted oracle) and borrowing **~187.37 WETH** (~$390K) that was never repaid.
 
 ---
 
