@@ -19,7 +19,7 @@ An `AssetListingAdmin` on Aave v3 (Ethereum) misconfigured the **USDC** price or
 
 // Oracle Misconfiguration
 
-Address `0xfb33...02Cc`, holding the `AssetListingAdmin` role in Aave's ACL Manager, executed the following call
+Address `0xfb33...02Cc`, holding the `AssetListingAdmin` role in Aave ACL Manager, executed the following call
 
 ```solidity
 AaveOracle.setAssetSources(
