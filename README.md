@@ -152,13 +152,15 @@ Final state:
 
 ## Output
 
-<img width="552" height="299" alt="image" src="https://github.com/user-attachments/assets/9a7f30d7-308a-4d24-a402-d42dba73c90f" />
+<img width="526" height="294" alt="image" src="https://github.com/user-attachments/assets/d1f74daa-0ffd-4f31-91bd-74c5cb429276" />
 
 ```
+STAGE 1 :
 USDC price BEFORE misconfiguration (8 decimals): 99993076         (~$1.00)
 USDC price AFTER misconfiguration (8 decimals):  6855405329514    (~$68,554)
 Price inflation factor: 68558
 
+STAGE 2 :
 USDC price at attack block (8 decimals): 6855405329514
 WETH price at attack block (8 decimals): 208047000000             (~$2,080)
 Attacker ETH balance BEFORE: 0.000000000000000000
