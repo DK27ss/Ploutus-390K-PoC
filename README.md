@@ -6,7 +6,7 @@
 >| **Type** | Oracle Misconfiguration |
 >| **Misconfiguration block** | 24,538,894 |
 >| **Attack block** | 24,538,895 |
->| **Total loss** | ~187.37 ETH (~$390,000) |
+>| **Total loss** | 187.37 ETH (~$390,000) |
 >| **Attacker cost** | ~8.88 USDC + gas + 0.004 WETH (flash swap fee) |
 
 ## Summary
@@ -28,6 +28,8 @@ AaveOracle.setAssetSources(
 );
 ```
 
+<img width="1098" height="149" alt="image" src="https://github.com/user-attachments/assets/aee4dde1-59a3-4393-9124-9dafd25472c3" />
+
 **Before:**
 - `getAssetPrice(USDC)` -> `99,993,076` (8 decimals) = **~$1.00**
 - Feed: Chainlink USDC/USD (`0x8fFf...18f6`)
@@ -39,6 +41,10 @@ AaveOracle.setAssetSources(
 <img width="1090" height="241" alt="image" src="https://github.com/user-attachments/assets/a4a831b5-be1a-4a8b-b1d1-dcd49ceb5df4" />
 
 The Aave system now considers **1 USDC = 1 BTC in value**.
+
+Misconfiguration TX: https://app.blocksec.com/phalcon/explorer/tx/eth/0xcfedf63b37a6cd45b21bc94e3de5412fee0765e7dad6b7c8561a01cebd193ab6
+
+Attack TX: https://app.blocksec.com/phalcon/explorer/tx/eth/0xa17dc37e1b65c65d20042212fb834974f7faaa961442e3fc05393778705f8474
 
 // Exploitation
 
