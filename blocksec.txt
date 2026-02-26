@@ -1,1 +1,0 @@
-https://app.blocksec.com/phalcon/explorer/tx/eth/0xcfedf63b37a6cd45b21bc94e3de5412fee0765e7dad6b7c8561a01cebd193ab6
